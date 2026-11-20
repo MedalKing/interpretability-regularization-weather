@@ -1,0 +1,51 @@
+{
+  "feature_cols": [
+    "tmin",
+    "tavg",
+    "tmax",
+    "prcp",
+    "dayofyear_sin",
+    "dayofyear_cos",
+    "rand_noise"
+  ],
+  "candidate_features": [
+    "tmin",
+    "tavg",
+    "tmax",
+    "prcp"
+  ],
+  "pair_settings": [
+    {
+      "setting": "local_knn_loose",
+      "k_neighbors": 25,
+      "context_max_dist": 2.0,
+      "min_feature_gap_scaled": 0.25,
+      "max_dayofyear_gap_days": NaN,
+      "max_pairs_per_anchor": 10,
+      "notes": "Loose local matching on non-constrained features."
+    },
+    {
+      "setting": "local_knn_medium",
+      "k_neighbors": 20,
+      "context_max_dist": 1.5,
+      "min_feature_gap_scaled": 0.35,
+      "max_dayofyear_gap_days": 45.0,
+      "max_pairs_per_anchor": 8,
+      "notes": "Moderate local matching with seasonal closeness."
+    },
+    {
+      "setting": "local_knn_strict",
+      "k_neighbors": 15,
+      "context_max_dist": 1.0,
+      "min_feature_gap_scaled": 0.5,
+      "max_dayofyear_gap_days": 30.0,
+      "max_pairs_per_anchor": 5,
+      "notes": "Strict local matching; fewer but cleaner pairs."
+    }
+  ],
+  "min_train_pairs_for_selection": 150,
+  "min_train_pairs_for_keep": 150,
+  "max_train_label_violation_for_keep": 0.35,
+  "max_train_label_violation_for_maybe": 0.45,
+  "baseline_model_path": "results/baseline/best_model.pt"
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the thesis."
+title: "Interpretability-driven regularization for station-level weather forecasting"
+authors:
+  - family-names: "von Hertzen"
+    given-names: "Alexander"
+license: MIT
+repository-code: "https://github.com/MedalKing/interpretability-regularization-weather"
+url: "https://aaltodoc.aalto.fi/items/31c8e057-7f71-4776-978c-8d7ae27e0bf3"
+keywords:
+  - machine learning
+  - interpretability
+  - regularization
+  - monotonicity
+  - feature importance
+  - weather forecasting
+preferred-citation:
+  type: thesis
+  title: "Interpretability-Driven Regularization for Station-Level Weather Forecasting: User Pseudo-Labels for Feature Importance and Monotonicity"
+  authors:
+    - family-names: "von Hertzen"
+      given-names: "Alexander"
+  thesis-type: "Master's thesis"
+  institution:
+    name: "Aalto University, School of Science"
+  year: 2026
+  url: "https://aaltodoc.aalto.fi/items/31c8e057-7f71-4776-978c-8d7ae27e0bf3"

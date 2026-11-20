@@ -1,0 +1,22 @@
+{
+  "train_config": {
+    "lr": 0.001,
+    "batch_size": 64,
+    "eval_batch_size": 256,
+    "num_epochs": 100
+  },
+  "feature_cols": [
+    "tmin",
+    "tavg",
+    "tmax",
+    "prcp",
+    "dayofyear_sin",
+    "dayofyear_cos",
+    "rand_noise"
+  ],
+  "n_train": 2556,
+  "n_val": 547,
+  "n_test": 549,
+  "device": "cuda",
+  "early_stopping_monitor": "val_loss"
+}

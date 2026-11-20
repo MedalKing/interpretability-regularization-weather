@@ -1,0 +1,13 @@
+{
+  "run_id": "z=noise_only|lambda=100|seed=0",
+  "expected_value": 10.389856338500977,
+  "feature_cols": [
+    "tmin",
+    "tavg",
+    "tmax",
+    "prcp",
+    "dayofyear_sin",
+    "dayofyear_cos",
+    "rand_noise"
+  ]
+}

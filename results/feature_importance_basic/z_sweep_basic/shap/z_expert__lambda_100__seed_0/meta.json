@@ -1,0 +1,13 @@
+{
+  "run_id": "z=expert|lambda=100|seed=0",
+  "expected_value": 10.307459831237793,
+  "feature_cols": [
+    "tmin",
+    "tavg",
+    "tmax",
+    "prcp",
+    "dayofyear_sin",
+    "dayofyear_cos",
+    "rand_noise"
+  ]
+}

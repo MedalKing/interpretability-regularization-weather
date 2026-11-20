@@ -1,0 +1,4 @@
+z_name,tmin,tavg,tmax,prcp,dayofyear_sin,dayofyear_cos,rand_noise
+expert,0.088,0.4488,0.1998,0.0277,0.0143,0.2149,0.0065
+perm_expert_00,0.0442,0.339,0.3195,0.0267,0.0185,0.2434,0.0088
+noise_only,0.023,0.3556,0.3259,0.0299,0.0117,0.2455,0.0084

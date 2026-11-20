@@ -1,0 +1,37 @@
+{
+  "keep_values": [
+    "yes",
+    "maybe"
+  ],
+  "n_constraints": 2,
+  "constraints": [
+    {
+      "feature": "tavg",
+      "direction": "nondecreasing",
+      "sign": 1,
+      "chosen_setting": "local_knn_strict",
+      "chosen_train_n_pairs": 340.0,
+      "train_label_violation_rate": 0.13529411764705881,
+      "test_label_violation_rate": 0.1297709923664122,
+      "test_baseline_violation_rate": 0.0,
+      "test_grad_violation_rate": 0.0,
+      "confidence": "high",
+      "rationale": "Warmer recent average temperature should usually not reduce next-day tmax locally.",
+      "notes": "baseline is already more monotone than labels on test; gradient-sign behaviour is relatively stable"
+    },
+    {
+      "feature": "tmax",
+      "direction": "nondecreasing",
+      "sign": 1,
+      "chosen_setting": "local_knn_medium",
+      "chosen_train_n_pairs": 5113.0,
+      "train_label_violation_rate": 0.2501466849207901,
+      "test_label_violation_rate": 0.23352902804957598,
+      "test_baseline_violation_rate": 0.007827788649706457,
+      "test_grad_violation_rate": 0.0018214936247723133,
+      "confidence": "medium",
+      "rationale": "Warmer recent maximum temperature should usually not reduce next-day tmax locally.",
+      "notes": "baseline is already more monotone than labels on test; gradient-sign behaviour is relatively stable"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+model_family,feature,test_pair_violation_mean,test_grad_violation_mean
+gated_erm,tavg,0.0,0.0
+gated_erm,tmax,0.0027397260273972,0.0
+feature_only,tavg,0.0,0.0
+feature_only,tmax,0.0033920417482061,0.0
+mono_only,tavg,0.0,0.0
+mono_only,tmax,0.0030006523157208,0.0
+combined,tavg,0.0,0.0
+combined,tmax,0.0035225048923679,0.0

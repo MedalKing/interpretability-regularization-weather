@@ -1,0 +1,18 @@
+{
+  "selected_shap_lambda": 100.0,
+  "selected_shap_seed": 0,
+  "selected_shap_z_names": [
+    "expert",
+    "perm_expert_00",
+    "noise_only"
+  ],
+  "comparison_plot_z_names": [
+    "expert",
+    "perm_expert_00",
+    "noise_only"
+  ],
+  "representative_shap_run_name": "expert",
+  "shap_background_size": 128,
+  "shap_method_preference": "deep",
+  "shap_explain_split": "test"
+}

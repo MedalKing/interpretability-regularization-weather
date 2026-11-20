@@ -1,0 +1,17 @@
+{
+  "constraint_feature": "tmin",
+  "constraint_sign": 1,
+  "lambda_values": [
+    0.0,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "max_pairs_per_feature_train": 1024,
+  "max_pairs_per_feature_eval": null
+}

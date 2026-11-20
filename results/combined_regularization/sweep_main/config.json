@@ -1,0 +1,85 @@
+{
+  "lambda_feat_values": [
+    0.0,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "lambda_mono_values": [
+    0.0,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "mono_margin": 0.0,
+  "mono_reduction": "mean_over_features",
+  "max_pairs_per_feature_train": 1024,
+  "max_pairs_per_feature_eval": null,
+  "selected_seed_for_store": 0,
+  "feature_cols": [
+    "tmin",
+    "tavg",
+    "tmax",
+    "prcp",
+    "dayofyear_sin",
+    "dayofyear_cos",
+    "rand_noise"
+  ],
+  "z": [
+    0.699999988079071,
+    1.0,
+    1.0,
+    0.4000000059604645,
+    0.30000001192092896,
+    0.30000001192092896,
+    0.0
+  ],
+  "training_spec_main": [
+    {
+      "feature": "tavg",
+      "direction": "nondecreasing",
+      "sign": 1,
+      "chosen_setting": "local_knn_strict",
+      "chosen_train_n_pairs": 340.0,
+      "train_label_violation_rate": 0.1352941176470588,
+      "test_label_violation_rate": 0.1297709923664122,
+      "test_baseline_violation_rate": 0.0,
+      "test_grad_violation_rate": 0.0,
+      "confidence": "high",
+      "rationale": "Warmer recent average temperature should usually not reduce next-day tmax locally.",
+      "notes": "baseline is already more monotone than labels on test; gradient-sign behaviour is relatively stable"
+    },
+    {
+      "feature": "tmax",
+      "direction": "nondecreasing",
+      "sign": 1,
+      "chosen_setting": "local_knn_medium",
+      "chosen_train_n_pairs": 5113.0,
+      "train_label_violation_rate": 0.2501466849207901,
+      "test_label_violation_rate": 0.2335290280495759,
+      "test_baseline_violation_rate": 0.0078277886497064,
+      "test_grad_violation_rate": 0.0018214936247723,
+      "confidence": "medium",
+      "rationale": "Warmer recent maximum temperature should usually not reduce next-day tmax locally.",
+      "notes": "baseline is already more monotone than labels on test; gradient-sign behaviour is relatively stable"
+    }
+  ],
+  "train_config": {
+    "lr": 0.001,
+    "batch_size": 64,
+    "eval_batch_size": 256,
+    "num_epochs": 80,
+    "weight_decay": 0.01,
+    "early_stopping_patience": 10,
+    "early_stopping_min_delta": 0.0
+  }
+}

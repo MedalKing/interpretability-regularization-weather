@@ -1,0 +1,30 @@
+[
+  {
+    "model_family": "gated_erm",
+    "lambda_feat": 0.0,
+    "lambda_mono": 0.0,
+    "seed": 0,
+    "path": "gated_erm__lambda_feat_0__lambda_mono_0__seed_0.pt"
+  },
+  {
+    "model_family": "feature_only",
+    "lambda_feat": 1.0,
+    "lambda_mono": 0.0,
+    "seed": 0,
+    "path": "feature_only__lambda_feat_1__lambda_mono_0__seed_0.pt"
+  },
+  {
+    "model_family": "mono_only",
+    "lambda_feat": 0.0,
+    "lambda_mono": 1.0,
+    "seed": 0,
+    "path": "mono_only__lambda_feat_0__lambda_mono_1__seed_0.pt"
+  },
+  {
+    "model_family": "combined",
+    "lambda_feat": 1.0,
+    "lambda_mono": 1.0,
+    "seed": 0,
+    "path": "combined__lambda_feat_1__lambda_mono_1__seed_0.pt"
+  }
+]

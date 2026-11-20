@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interpretability-regularization-weather"
+version = "1.0.0"
+description = "Interpretability-driven regularization (feature-importance and monotonicity priors) for station-level weather forecasting"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Alexander von Hertzen" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["src*"]

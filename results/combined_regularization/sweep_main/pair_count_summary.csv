@@ -1,0 +1,7 @@
+split,feature,n_pairs
+train,tavg,340
+train,tmax,5113
+val,tavg,128
+val,tmax,1634
+test,tavg,131
+test,tmax,1533

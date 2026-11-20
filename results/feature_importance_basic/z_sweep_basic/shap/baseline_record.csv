@@ -1,0 +1,2 @@
+run_id,model_family,seed,train_mse,val_mse,test_mse,test_rmse,test_mae
+baseline|seed=0,baseline,0,5.491850864088363,5.973719594906521,5.398501216505934,2.323467498482803,1.8316368892083186

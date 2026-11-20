@@ -1,0 +1,6 @@
+model,source,selection_rule,lambda_feat,lambda_mono,test_rmse,gate_cosine,test_pair_violation_macro,test_grad_violation_macro
+plain MLP baseline (nb03),03_baseline_training,saved test metrics,,,2.3038090726597584,,,
+best feature-only (nb05),05_feature_importance_sweep,min test_rmse_mean,1000.0,0.0,2.2895288211329152,0.983934717977614,,
+best monotonic-only (nb08),08_rq2_monotonicity_training,min best_val_total_mean,0.0,1.0,2.312573961411225,,0.0016307893020221,0.0
+best gated ERM (current),10_rq3_combined_regularization,current family baseline,0.0,0.0,2.3199304010236315,0.8356671931394988,0.0013698630136986,0.0
+best combined (current),10_rq3_combined_regularization,min best_val_total_mean within combined family,1.0,1.0,2.311891785183284,0.8595304073246627,0.0017612524461839,0.0

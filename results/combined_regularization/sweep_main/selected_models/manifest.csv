@@ -1,0 +1,5 @@
+model_family,lambda_feat,lambda_mono,seed,path
+gated_erm,0.0,0.0,0,gated_erm__lambda_feat_0__lambda_mono_0__seed_0.pt
+feature_only,1.0,0.0,0,feature_only__lambda_feat_1__lambda_mono_0__seed_0.pt
+mono_only,0.0,1.0,0,mono_only__lambda_feat_0__lambda_mono_1__seed_0.pt
+combined,1.0,1.0,0,combined__lambda_feat_1__lambda_mono_1__seed_0.pt

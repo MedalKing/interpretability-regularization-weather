@@ -1,0 +1,5 @@
+feature,chosen_setting,chosen_train_n_pairs,train_label_violation_rate,train_label_mean_hinge,chosen_setting_meets_pair_threshold
+prcp,local_knn_loose,15610,0.43965406790518896,1.1036002562459961,True
+tavg,local_knn_strict,340,0.13529411764705881,0.25735294117647056,True
+tmax,local_knn_medium,5113,0.2501466849207901,0.6548406023860747,True
+tmin,local_knn_loose,16823,0.4690007727515901,1.3224038518694643,True

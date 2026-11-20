@@ -1,0 +1,59 @@
+{
+  "negative_control_specs": [
+    {
+      "spec_name": "wrong_sign_tavg",
+      "description": "Deliberately wrong sign: force tavg to be nonincreasing.",
+      "features": [
+        "tavg"
+      ],
+      "sign_dict": {
+        "tavg": -1
+      }
+    },
+    {
+      "spec_name": "wrong_sign_tmax",
+      "description": "Deliberately wrong sign: force tmax to be nonincreasing.",
+      "features": [
+        "tmax"
+      ],
+      "sign_dict": {
+        "tmax": -1
+      }
+    },
+    {
+      "spec_name": "weak_prior_tmin",
+      "description": "Low-confidence prior from notebook 07: force tmin to be nondecreasing.",
+      "features": [
+        "tmin"
+      ],
+      "sign_dict": {
+        "tmin": 1
+      }
+    },
+    {
+      "spec_name": "weak_prior_prcp",
+      "description": "Regime-dependent prior from notebook 07: force prcp to be nonincreasing.",
+      "features": [
+        "prcp"
+      ],
+      "sign_dict": {
+        "prcp": -1
+      }
+    }
+  ],
+  "negative_lambda_values": [
+    0.0,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "negative_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "selected_negative_lambda_for_plots": 10.0
+}
